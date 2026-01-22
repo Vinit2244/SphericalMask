@@ -12,3 +12,5 @@ opencv-python
 numpy
 imageio
 setuptools
+trimesh
+numba
