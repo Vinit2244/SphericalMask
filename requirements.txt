@@ -14,3 +14,4 @@ imageio
 setuptools
 trimesh
 numba
+pyviz3d
