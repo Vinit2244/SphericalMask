@@ -1149,7 +1149,7 @@ class SphericalMask(nn.Module):
         boxes_final = boxes_final.cpu().numpy()
 
         # NOTE rle encode mask to save memory
-        rle_masks = rle_encode_gpu_batch(masks_final)
+        # rle_masks = rle_encode_gpu_batch(masks_final)
 
         for i in range(cls_final.shape[0]):
             pred = {}
@@ -1168,7 +1168,7 @@ class SphericalMask(nn.Module):
 
             pred["conf"] = scores_final[i]
 
-            pred["pred_mask"] = rle_masks[i]
+            pred["pred_mask"] = masks_final[i]
 
             instances.append(pred)
 

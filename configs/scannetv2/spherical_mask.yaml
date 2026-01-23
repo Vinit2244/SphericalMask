@@ -37,7 +37,7 @@ model:
 data:
   train:
     type: 'scannetv2'
-    data_root: '/root/src/SoftGroup/dataset/scannetv2'
+    data_root: './dataset/scannetv2'
     prefix: 'train' 
     suffix: '_inst_nostuff.pth'
     training: True
@@ -49,8 +49,8 @@ data:
       min_npoint: 5000
   test:
     type: 'scannetv2'
-    data_root: '/root/src/SoftGroup/dataset/scannetv2'
-    prefix: 'val'
+    data_root: './dataset/scannetv2'
+    prefix: 'test'
    
     suffix: '_inst_nostuff.pth'
     training: False
@@ -88,4 +88,4 @@ step_epoch: 50
 save_freq: 4
 
 work_dir: './sph_models/'
-pretrain_ckpt: './isbnet_pretrain.pth'  
+pretrain_ckpt: './pretrains/spherical_mask_155.pth'

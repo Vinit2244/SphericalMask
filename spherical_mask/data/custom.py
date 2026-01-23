@@ -18,9 +18,6 @@ class CustomDataset(Dataset):
 
     def __init__(self, data_root, prefix, suffix, voxel_cfg=None, training=True, repeat=1, logger=None, debug=False):
         self.data_root = data_root
-        if 'scannetv2' in self.data_root:
-            self.data_root = '/root/src/SoftGroup/dataset/scannetv2/'
-        
         self.prefix = prefix
         self.suffix = suffix
         self.voxel_cfg = voxel_cfg
