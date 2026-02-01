@@ -16,3 +16,4 @@ trimesh
 numba
 pyviz3d
 pyglet<2
+open3d
