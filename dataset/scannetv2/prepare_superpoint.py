@@ -3,7 +3,6 @@ import torch
 import trimesh
 import os
 import segmentator
-import pdb
 import glob
 
 
